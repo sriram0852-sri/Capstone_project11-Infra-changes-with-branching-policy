@@ -67,8 +67,10 @@ resource "aws_instance" "monitoring" {
   EOF
 
   tags = {
-    Name    = "Sriram-project3-ec2"
-    Project = "EC2-CloudWatch-Monitoring"
+    Name        = "Sriram-project3-ec2"
+    Project     = "EC2-CloudWatch-Monitoring"
+    Environment = "Development"
+    ManagedBy   = "Terraform"
   }
 }
 
